@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Sharp" rel="stylesheet">
+    <style>
+        /* Font */
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+        * {
+            font-family: 'Pretendard';
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-container relative w-full h-sceen flex flex-row">
+        <img src="/MyPage/img/myphoto_1by1.gif" alt=""
+            class="absolute rounded-full bg-white w-44 h-44 shadow-lg z-40 ml-20 mt-10">
+        <section class="flex-none flex-start w-52 h-sceen bg-gray-400 pb-8">
+            <!-- 좌측 -->
+        </section>
+        <main class="w-7/12 h-full pt-16 pb-8">
+            <!-- 우측 -->
+            <section class="pl-8 pb-10">
+                <h1 class="inline-block text-5xl ml-8 font-black">손수철 <small
+                        class="inline-block text-gray-400 font-light">SON
+                        SOOCHUL</small>
+                </h1>
+                <div class="flex flex-row justify-between relative ml-8 mt-7">
+                    <dl class="flex flex-row">
+                        <dt class="w-24 font-bold">생년월일</dt>
+                        <dd class="w-60">1995.07.05</dd>
+                    </dl>
+                    <dl class="flex flex-row">
+                        <dt class="w-24 font-bold">연락처</dt>
+                        <dd class="w-60">+82-10-5199-0000</dd>
+                    </dl>
+                </div>
+                <div class="flex flex-row justify-between relative ml-8">
+                    <dl class="flex flex-row">
+                        <dt class="w-24 font-bold">이메일</dt>
+                        <dd class="w-60">zerozerobase@gmail.com</dd>
+                    </dl>
+                    <dl class="flex flex-row">
+                        <dt class="w-24 font-bold">주소</dt>
+                        <dd class="w-60">경기도 김포시 OO동 OOO번지</dd>
+                    </dl>
+                </div>
+            </section>
+
+            <section class="skill">
+                <h2 class="block rounded-full bg-white font-bold -m-6 mt-10 p-2 text-xl border-l-4 border-white">
+                    <img src="https://fonts.gstatic.com/s/i/materialiconsoutlined/all_inclusive/v11/24px.svg" alt=""
+                        class="inline w-8 h-8 mr-11">스킬
+                </h2>
+                <div class="mt-6 ml-16">
+                    <dl class="flex flex-row">
+                        <dt class="flex-none w-40 font-bold">Programing</dt>
+                        <dd class="flex flex-row w-full">
+                            <span class="inline-block w-1/4 m-0 p-0">HTML</span>
+                            <span class="inline-block w-1/4 m-0 p-0">CSS</span>
+                            <span class="inline-block w-2/4 m-0 p-0">JavaScript</span>
+                        </dd>
+                    </dl>
+                    <dl class="flex flex-row">
+                        <dt class="flex-none w-40"></dt>
+                        <dd class="flex flex-row w-full">
+                            <span class="inline-block w-1/4 bg-gray-400 font-bold text-white pl-1">25%</span>
+                            <span class="inline-block w-1/4 bg-gray-500 font-bold text-white pl-1">25%</span>
+                            <span class="inline-block w-2/4 bg-gray-400 font-bold text-white pl-1">50%</span>
+                        </dd>
+                    </dl>
+                    <dl class="flex flex-row mt-2">
+                        <dt class="flex-none w-40 font-bold">Design</dt>
+                        <dd class="flex-none w-full">Photoshop | Illustrator</dd>
+                    </dl>
+                </div>
+            </section>
+
+            <section class="activity">
+                <h2 class="block rounded-full bg-white font-bold -m-6 mt-10 p-2 text-xl border-l-4 border-white">
+                    <img src="https://fonts.gstatic.com/s/i/materialiconsoutlined/group/v18/24px.svg" alt=""
+                        class="inline w-8 h-8 mr-11">활동사항
+                </h2>
+                <div class="mt-6 ml-16">
+                    <dl class="flex flex-row">
+                        <dt class="flex-none w-40">2020.03 - 2020.02</dt>
+                        <dd class="flex-none w-60 font-bold">000</dd>
+                        <dd class="flex-none w-16">인턴</dd>
+                        <dd class="flex-none w-max">Lorem ipsum dolor sit amet consectetur.</dd>
+                    </dl>
+                    <dl class="flex flex-row mt-2">
+                        <dt class="flex-none w-40 ">2021.11 - 2022.02</dt>
+                        <dd class="flex-none w-60 font-bold">멋쟁이사자처럼 프론트엔드 1기</dd>
+                        <dd class="flex-none w-16">교육</dd>
+                        <dd class="flex-none w-max">Lorem ipsum dolor sit amet consectetur.</dd>
+                    </dl>
+                    <dl class="flex flex-row mt-2">
+                        <dt class="flex-none w-40 ">2021.11 - 2022.02</dt>
+                        <dd class="flex-none w-60 font-bold">연합동아리</dd>
+                        <dd class="flex-none w-16">동아리</dd>
+                        <dd class="flex-none w-max">Lorem ipsum dolor sit amet consectetur.</dd>
+                    </dl>
+                </div>
+            </section>
+
+            <section class="school">
+                <h2 class="block rounded-full bg-white font-bold -m-6 mt-10 p-2 text-xl border-l-4 border-white">
+                    <img src="https://fonts.gstatic.com/s/i/materialiconsoutlined/school/v12/24px.svg" alt=""
+                        class="inline w-8 h-8 mr-11">학력사항
+                </h2>
+                <div class="mt-6 ml-16">
+                    <dl class="flex flex-row">
+                        <dt class="flex-none w-40">2011.03 - 2014.02</dt>
+                        <dd class="flex-none w-44 font-bold">00고등학교 (경기)</dd>
+                        <dd class="flex-none w-16">졸업</dd>
+                        <dt class="flex-none w-44">인문계열</dt>
+                        <dd class="flex-none w-max">-</dd>
+                    </dl>
+                    <dl class="flex flex-row mt-2">
+                        <dt class="flex-none w-40 ">2014.03 - 2021.08</dt>
+                        <dd class="flex-none w-44 font-bold">00대학교</dd>
+                        <dd class="flex-none w-16">졸업</dd>
+                        <dt class="flex-none w-44">사회과학대학 경제학과</dt>
+                        <dd class="flex-none w-max">전체평점 3.44/4.50</dd>
+                    </dl>
+                </div>
+            </section>
+
+            <section class="project">
+                <h2 class="block rounded-full bg-white font-bold -m-6 mt-10 p-2 text-xl border-l-4 border-white">
+                    <img src="https://fonts.gstatic.com/s/i/materialiconsoutlined/code/v11/24px.svg" alt=""
+                        class="inline w-8 h-8 mr-11">프로젝트
+                </h2>
+                <div class="mt-6 ml-16">
+                    <dl class="flex flex-row">
+                        <dt class="flex-none w-40">2011.03 - 2014.02</dt>
+                        <dd class="flex-none w-full">
+                            <strong class="text-lg font-bold">1만시간의 법칙 <span
+                                    class="material-icons-sharp text-gray-400 -mt-1">htmlcss</span></strong>
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magnam
+                                assumenda possimus est pariatur ea voluptates exercitationem minus, soluta sint
+                                doloribus vitae maiores perferendis aut quasi libero beatae doloremque porro?
+                                <button type="button" class="float-right mr-6 font-bold animate-pulse">See ➔</button>
+                            </p>
+
+                        </dd>
+                    </dl>
+                    <dl class="flex flex-row mt-5">
+                        <dt class="flex-none w-40">2011.03 - 2014.02</dt>
+                        <dd class="flex-none w-full">
+                            <strong class="text-lg font-bold">Vending Machine <span
+                                    class="material-icons-sharp text-gray-400 -mt-1">htmlcssjavascript</span></strong>
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magnam
+                                assumenda possimus est pariatur ea voluptates exercitationem minus, soluta sint
+                                doloribus vitae maiores perferendis aut quasi libero beatae doloremque porro?
+                                <button type="button" class="float-right mr-6 font-bold animate-pulse">See ➔</button>
+                            </p>
+                        </dd>
+                    </dl>
+                    <dl class="flex flex-row mt-5">
+                        <dt class="flex-none w-40">2011.03 - 2014.02</dt>
+                        <dd class="flex-none w-full">
+                            <strong class="text-lg font-bold">Landing Page <span
+                                    class="material-icons-sharp text-gray-400 -mt-1">htmlcssjavascript</span></strong>
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magnam
+                                assumenda possimus est pariatur ea voluptates exercitationem minus, soluta sint
+                                doloribus vitae maiores perferendis aut quasi libero beatae doloremque porro?
+                                <button type="button" class="float-right mr-6 font-bold animate-pulse">See ➔</button></p>
+                        </dd>
+                    </dl>
+                    <dl class="flex flex-row mt-5">
+                        <dt class="flex-none w-40">2011.03 - 2014.02</dt>
+                        <dd class="flex-none w-full">
+                            <strong class="text-lg font-bold">감귤마켓 <span
+                                    class="material-icons-sharp text-gray-400 -mt-1">htmlcssjavascript</span></strong>
+                            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magnam
+                                assumenda possimus est pariatur ea voluptates exercitationem minus, soluta sint
+                                doloribus vitae maiores perferendis aut quasi libero beatae doloremque porro?
+                                <button type="button" class="float-right mr-6 font-bold animate-pulse">See ➔</button>
+                            </p>
+                        </dd>
+                    </dl>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    https://tailwindcss.com/
+    <div class="text-base font-serif">Hello world</div>
+    <div class="text-5xl font-serif">Hello world</div>
+    <div class="text-5xl p-8 font-serif">Hello world</div>
+    <div class="text-5xl py-8 font-serif bg-red-600 text-gray-200">Hello world</div>
+
+    <ul class="list-decimal font-serif ml-5">
+        <li>hello-1</li>
+        <li>hello-2</li>
+        <li>hello-3</li>
+        <li>hello-4</li>
+    </ul>
+
+    <div class="rounded-full h-24 w-24 bg-blue-300 m-5"></div>
+<!-- flex에서 w-를 쓰려면 flex-n에서 쓸 수 없음 -->
+    <div class="flex flex-wrap border-solid border-4 border-red-500">
+        <div class="flex w-2/3 border-solid border-4 border-blue-500">
+            hello world
+        </div>
+        <div class="flex w-1/3  border-solid border-4 border-blue-500">
+            hello world
+        </div>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4">
+        <div class="border-solid border-4 border-blue-500">hello world</div>
+        <div class="border-solid border-4 border-blue-500">hello world</div>
+        <div class="border-solid border-4 border-blue-500">hello world</div>
+        <div class="border-solid border-4 border-blue-500">hello world</div>
+        <div class="border-solid border-4 border-blue-500">hello world</div>
+        <div class="border-solid border-4 border-blue-500">hello world</div>
+        <div class="border-solid border-4 border-blue-500">hello world</div>
+        <div class="border-solid border-4 border-blue-500">hello world</div>
+        <div class="border-solid border-4 border-blue-500">hello world</div>
+    </div>    
+</body>
+</html>
